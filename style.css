@@ -1,0 +1,20 @@
+.window{
+    width: 300px;
+    overflow: hidden;
+}
+.images{
+    display: flex;
+    align-content: flex-start;
+    transition: all 0.5s;
+
+}
+.images>img{
+    width: 300px;
+    height: 200px;
+}
+#buttons{
+    cursor: pointer;
+}
+.red{
+    color: red;
+}
