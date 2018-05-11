@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.window{
+    position: relative;
+    margin: 20px auto;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+.window>div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    font-size: 60px;
+    font-weight: bold;
+    top: 0;
+    transition: all 0.5s;
+}
+.window>div.current{
+    left: 0;
+    transform: translateX(0);
+    z-index: 1;
+}
+.window>div.leave{
+    left: 0;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+.window>div.stay{
+    left: 0;
+    transform: translateY(100%);
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: pink;
+}
+.box3{
+    background-color: yellow;
+}
+.box4{
+    background-color: green;
+}
+.box5{
+    background-color: purple;
+}
