@@ -35,7 +35,7 @@ document.addEventListener('visibilitychange',function(e){
     }else{
         timer = setInterval(function(){
             gotoSlide(current+1)
-        },2000)
+        },2000) 
     }
 })
 
@@ -54,10 +54,8 @@ function gotoSlide(index){
     }else if(index<0){
         index = $buttons.length - 1
     }
-    console.log(current,index)
     if (current === $buttons.length - 1 && index === 0) {
         //最后一张到第一张
-        console.log("here")
         $('#slide').css({ transform: `translateX(${-($buttons.length+1)*400}px)`})
             .one('transitionend', function () {
                 $('#slide').hide()
